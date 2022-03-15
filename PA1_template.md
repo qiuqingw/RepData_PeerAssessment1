@@ -2,6 +2,10 @@ RepData\_PeerAssessment1
 ================
 3/14/2022
 
+``` r
+knitr::opts_chunk$set(fig.path='Figs/')
+```
+
 ## Loading and preprocessing the data
 
 ``` r
