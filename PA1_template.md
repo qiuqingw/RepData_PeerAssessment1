@@ -56,7 +56,7 @@ hist(steps_day$total_steps,
      ylim=c(0, 8), breaks = 50)
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](figures/unnamed-chunk-2-1.png)<!-- -->
 
 ``` r
 ## Calculate and report the mean and median of the total number of steps taken per day.
@@ -85,7 +85,7 @@ plot(pattern_day$interval, pattern_day$total, type = "l", xlab = "The 5-minute I
      ylab = "Average number of steps taken", main = "The Average daily activity pattern")
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](figures/unnamed-chunk-3-1.png)<!-- -->
 
 ``` r
 ## Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -106,7 +106,7 @@ plot(pattern_day$interval, pattern_day$total, type = "l", xlab = "The 5-minute I
      ylab = "Average number of steps taken", main = "The Average daily activity pattern")
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](figures/unnamed-chunk-4-1.png)<!-- -->
 
 ``` r
 ## Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -147,7 +147,7 @@ hist(impu_steps_day$total_steps,
      ylim=c(0, 12), breaks = 50)
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](figures/unnamed-chunk-5-1.png)<!-- -->
 
 ``` r
 impu_mean <- mean(impu_steps_day$total_steps, na.rm = TRUE)
@@ -211,7 +211,7 @@ plot <- ggplot(new_pattern_day, aes(interval, total_mean)) +
 plot
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](figures/unnamed-chunk-6-1.png)<!-- -->
 
 ``` r
 #dev.off()
